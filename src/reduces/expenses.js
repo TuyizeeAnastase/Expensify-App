@@ -22,7 +22,7 @@ export default (state=expenseReduceDefaultState,action)=>{
                     }
         });
     case 'SET_EXPENSE':
-        return action.expenses
+        return action.expenses;
      default:
          return state;
  }

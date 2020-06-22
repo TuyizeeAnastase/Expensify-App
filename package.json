@@ -4,9 +4,6 @@
   "main": "index.js",
   "author": "Tuyizere",
   "license": "MIT",
-  "engines": {
-    "node": "12.16.3"
-  },
   "scripts": {
     "build:dev": "webpack ",
     "build:prod": "webpack -p --env production",
