@@ -5,7 +5,7 @@ export default (state=expenseReduceDefaultState,action)=>{
     case 'ADD_EXPENSE':
         return [
             ...state,
-            action.expenses,
+            action.expense,
         ];
     case 'REMOVE_EXPENSE':
         return state.filter(({id})=>id!==action.id );
@@ -20,7 +20,9 @@ export default (state=expenseReduceDefaultState,action)=>{
                     else{
                         return expenses
                     }
-        })
+        });
+    case 'SET_EXPENSE':
+        return action.expenses
      default:
          return state;
  }
