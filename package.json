@@ -10,6 +10,7 @@
   "scripts": {
     "build:dev": "webpack ",
     "build:prod": "webpack -p --env production",
+    "build":"webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "test": "jest",
     "start": "node server/server.js",
